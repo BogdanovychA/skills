@@ -1,5 +1,14 @@
-*
+/*
 !/.gitignore
-!/.agent/skills
 !/README.md
+!/pyproject.toml
+!/uv.lock
+!/.pre-commit-config.yaml
+!/.python-version
 
+# Allow .agents folder but ignore its contents by default
+!/.agents/
+.agents/*
+
+# Specifically allow skills directory and its subdirectories
+!/.agents/skills/
