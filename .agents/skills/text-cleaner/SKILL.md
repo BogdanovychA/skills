@@ -1,6 +1,6 @@
 ---
 name: text-cleaner
-version: 0.0.1
+version: 0.0.2
 description: Specializes in cleaning text from technical noise (timestamps, comments like [laughter], [music], HTML tags) while preserving the original text unchanged. Outputs clean text in Markdown format with minimal sectioning.
 repository: https://github.com/BogdanovychA/skills
 ---
@@ -29,7 +29,8 @@ To remove everything that is not part of the speech or the main content, without
 - **Paragraphs:** If the text is a solid block, break it into logical paragraphs for readability.
 - **Minimal Formatting:**
     - Output the result in Markdown format (`.md`).
-    - Use a minimal number of headers (`##`) only to separate very large blocks of text by meaning, if logically necessary. In other cases, paragraph separation is sufficient.
+    - **Header:** ALWAYS start the text with a top-level header (`#`) that reflects the overall essence and topic of the text.
+    - Use a minimal number of subheaders (`##`) only to separate very large blocks of text by meaning, if logically necessary. In other cases, paragraph separation is sufficient.
     - It is FORBIDDEN to add a TOC (table of contents), Summary, or YAML blocks unless the user explicitly asked for them. The output should be just clean text.
 
 ## File Name Format
