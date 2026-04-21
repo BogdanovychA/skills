@@ -19,3 +19,11 @@ Allows agents to efficiently clean text of "technical noise": timestamps, HTML t
 ```bash
 npx skills add BogdanovychA/skills --skill text-cleaner
 ```
+
+### 3. Transcript Downloader (transcript-downloader)
+Enables agents to download and save YouTube transcripts to the local disk. By default, it saves the transcript in the project root directory, unless specified otherwise by the user.
+
+**Installation Command:**
+```bash
+npx skills add BogdanovychA/skills --skill transcript-downloader
+```
