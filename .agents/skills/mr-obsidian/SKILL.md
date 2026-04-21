@@ -25,6 +25,9 @@ The skill receives text (preferably cleaned) as input.
 3.  **Structuring:**
     - Break the text into logical sections (##) and subsections (###).
     - Highlight KEY points or quotes using Obsidian Callouts (`> [!INFO]`, `> [!QUOTE]`).
+    - **Formulas and Code:**
+      - If the text contains mathematical formulas, format them using LaTeX syntax (e.g., `$E=mc^2$` for inline or `$$ ... $$` for blocks).
+      - If the text contains code snippets, wrap them in Markdown code blocks with the corresponding language identifier (e.g., ```python ... ```).
 4.  **Emojis:** For better visualization, a small number of emojis can be used in section and subsection titles.
 
 ## Document Structure
