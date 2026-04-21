@@ -1,6 +1,7 @@
 /*
 !/.gitignore
 !/README.md
+!/LICENSE
 !/pyproject.toml
 !/uv.lock
 !/.pre-commit-config.yaml
