@@ -1,7 +1,6 @@
 import argparse
 import json
 import sys
-from pathlib import Path
 
 from mr_transcript import get_languages, get_transcript
 
