@@ -1,3 +1,5 @@
+# script version: 1.0.3
+
 import io
 import logging
 import urllib.request
