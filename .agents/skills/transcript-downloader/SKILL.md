@@ -1,7 +1,7 @@
 ---
 name: transcript-downloader
 description: Download YouTube transcripts in various languages using the mr-transcript library. Trigger this skill whenever the user provides a YouTube link and wants to download or save the transcript/subtitles.
-version: 0.1.0
+version: 0.1.1
 repository: https://github.com/BogdanovychA/skills
 ---
 
@@ -20,11 +20,13 @@ This skill enables you to download and save YouTube transcripts to your local di
 ## Scripts
 
 ### `scripts/downloader.py`
-This script handles the interaction with the `mr-transcript` library.
+This script handles the interaction with the `mr-transcript` library. It automatically manages its dependencies by trying to use `uv` first, and falling back to a local virtual environment (`.venv`) if `uv` is not available.
 
 **Usage:**
-- `uv run --with mr-transcript python3 scripts/downloader.py --list <URL>`
-- `uv run --with mr-transcript python3 scripts/downloader.py --download <URL> --lang <LANG_CODE> [--output <FILENAME>]`
+- `python3 scripts/downloader.py --list <URL>`
+- `python3 scripts/downloader.py --download <URL> --lang <LANG_CODE> [--output <FILENAME>]`
+
+*Note: You can also use `uv run --with mr-transcript python3 scripts/downloader.py ...` directly if you know `uv` is available, as it is slightly faster.*
 
 ## Example
 
