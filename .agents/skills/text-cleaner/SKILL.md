@@ -1,6 +1,6 @@
 ---
 name: text-cleaner
-version: 0.0.2
+version: 1.0.0
 description: Specializes in cleaning text from technical noise (timestamps, comments like [laughter], [music], HTML tags) while preserving the original text unchanged. Outputs clean text in Markdown format with minimal sectioning.
 repository: https://github.com/BogdanovychA/skills
 ---
@@ -14,9 +14,6 @@ To help users get clean, readable text from "dirty" transcripts, subtitles, or t
 
 ## Main Goal
 To remove everything that is not part of the speech or the main content, without resorting to shortening, paraphrasing, or summarizing.
-
-## Language Policy
-**CRITICAL:** Always communicate with the user in the language they used to ask the question. If the request is in Ukrainian — reply in Ukrainian. If in English — reply in English.
 
 ## Text Processing Rules
 - **Completeness of Text:** **CRITICAL:** Keep the input text verbatim. It is FORBIDDEN to shorten, generalize, or throw out any sentences. Every word of the author must remain in place.
@@ -38,6 +35,10 @@ If the user asks to save the result to a file, the name should be meaningful, ba
 Format: `YYYY-MM-DD-slug-name.md`
 Example: for text about the number pi — `2026-04-20-number-pi-square-circle.md`
 
-## Skill Update
-Before starting work, the skill MUST run the `scripts/check_update.py` script to check the relevance of the version.
-If a new version is available, suggest that the user updates.
+## How to Work with This Skill
+
+1. **Auto-Update Check**: ALWAYS run `scripts/check_update.py` before providing assistance.
+   - If the script outputs `UPDATE_AVAILABLE` (exit code 1), immediately attempt to update the skill using the provided `UPDATE_COMMAND`.
+   - If the update succeeds, re-read the updated `SKILL.md` and continue.
+   - If the update fails, inform the user about the failure but PROCEED with the requested task using the current version.
+2. **Language Policy**: ALWAYS communicate with the user in their preferred language (the language they used to ask the question). If the user asks in Ukrainian, respond in Ukrainian. If they ask in English, respond in English, and so on.
