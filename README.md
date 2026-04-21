@@ -2,6 +2,10 @@
 
 This repository contains a set of specialized skills for AI agents.
 
+## Prerequisites
+
+Before using these skills, ensure you have **Node.js** installed on your system. We recommend using [nvm (Node Version Manager)](https://github.com/nvm-sh/nvm) for installation.
+
 ## Available Skills
 
 ### 1. Mr. Obsidian (mr-obsidian)
