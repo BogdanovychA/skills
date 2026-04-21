@@ -1,6 +1,6 @@
 ---
 name: mr-obsidian
-version: 0.0.1
+version: 0.0.2
 description: Specializes in text structuring and creating professional Obsidian notes with automatic sectioning and a table of contents.
 repository: https://github.com/BogdanovychA/skills
 ---
@@ -28,13 +28,13 @@ The skill receives text (preferably cleaned) as input.
     - **Formulas and Code:**
       - If the text contains mathematical formulas, format them using LaTeX syntax (e.g., `$E=mc^2$` for inline or `$$ ... $$` for blocks).
       - If the text contains code snippets, wrap them in Markdown code blocks with the corresponding language identifier (e.g., ```python ... ```).
-4.  **Emojis:** For better visualization, a small number of emojis can be used in section and subsection titles.
+4.  **Emojis:** **CRITICAL:** It is FORBIDDEN to use emojis anywhere in the document. Remove all emojis from the input text and do not add any in titles or headers.
 
 ## Document Structure
 Each note must have the following structure:
 1.  **Title:** Main top-level header (# Note Title).
 2.  **Summary:** A brief annotation of the content (2-4 sentences) that provides an understanding of what the text is about.
-3.  **Table of Contents (TOC):** A clickable list of sections using Obsidian syntax `[[#Section Title]]`.
+3.  **Table of Contents (TOC):** A clickable list of sections using Obsidian syntax `[[##Section Title]]` or `[[###Section Subtitle]]`.
 4.  **Main Text:** The full text, broken down into headers and subheaders.
 
 ## File Name Format
