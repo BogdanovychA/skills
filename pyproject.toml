@@ -6,7 +6,9 @@ authors = [
     { name = "Andrii Bogdanovych", email = "a@bogdanovych.org" }
 ]
 requires-python = ">=3.10"
-dependencies = []
+dependencies = [
+    "mr-transcript>=0.1.2",
+]
 [dependency-groups]
 dev = [
     "pre_commit",

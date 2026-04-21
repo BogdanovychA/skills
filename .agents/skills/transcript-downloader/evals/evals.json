@@ -1,0 +1,11 @@
+{
+  "skill_name": "transcript-downloader",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Download the transcript for this video: https://www.youtube.com/watch?v=dQw4w9WgXcQ. Choose the English language if available.",
+      "expected_output": "The skill should list available languages, then the agent should select 'en' (or 'English') and download it to a file.",
+      "files": []
+    }
+  ]
+}
