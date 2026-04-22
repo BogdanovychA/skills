@@ -1,6 +1,6 @@
 ---
 name: mr-obsidian
-version: 0.1.0
+version: 0.1.1
 description: Specializes in text structuring and creating professional Obsidian notes with automatic sectioning and a table of contents.
 repository: https://github.com/BogdanovychA/skills
 ---
@@ -35,8 +35,7 @@ The skill receives text (preferably cleaned) as input.
 Each note must have the following structure:
 1.  **Title:** Main top-level header (# Note Title).
 2.  **Summary:** A brief annotation of the content (2-4 sentences) that provides an understanding of what the text is about.
-3.  **Table of Contents (TOC):** A clickable list of sections using Obsidian syntax `[[##Section Title]]` or `[[###Section Subtitle]]`.
-4.  **Main Text:** The full text, broken down into headers and subheaders.
+3.  **Main Text:** The full text, broken down into headers and subheaders.
 
 ## File Name Format
 The name of the created file should be in the format:
