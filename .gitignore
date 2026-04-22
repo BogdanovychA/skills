@@ -1,19 +1,44 @@
-/*
-!/.gitignore
-!/README.md
-!/LICENSE
-!/FUNDING.yml
-!/pyproject.toml
-!/uv.lock
-!/.pre-commit-config.yaml
-!/.python-version
+# Environments
+**/.venv/
+**/env/
+**/venv/
+**/ENV/
 
-# Allow .agents folder but ignore its contents by default
-!/.agents/
-.agents/*
+# Python
+**/__pycache__/
+**/*.py[cod]
+**/*$py.class
+**/.pytest_cache/
+**/.mypy_cache/
+**/.ruff_cache/
+**/dist/
+**/wheels/
+**/*.egg-info
+**/build*/
 
-# Specifically allow skills directory and its subdirectories
-!/.agents/skills/
+# IDEs
+**/.idea/
+**/.vscode/
+**/*.swo
 
-# Scripts
-!/scripts/
+### Logs
+**/*.log
+
+# Project Specific
+/workspace/*
+!/workspace/.gitkeep
+
+# System
+**/.DS_Store
+**/Thumbs.db
+**/*.tmp
+**/*.swp
+
+# Clouds
+**/.stfolder/
+**/.stversions/
+**/.stignore
+**/.syncthing.*.tmp
+**/~syncthing~*.tmp
+**/*sync-conflict*
+**/*conflicted*
