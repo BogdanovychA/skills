@@ -31,3 +31,11 @@ Enables agents to download and save YouTube transcripts to the local disk. By de
 ```bash
 npx skills add BogdanovychA/skills --skill transcript-downloader
 ```
+
+### 4. Child Nutrition Analysis (5-5-3-2)
+Specializes in analyzing the nutrition of young children (1–3 years) using the 5-5-3-2 methodology. It helps parents evaluate daily diets based on British standards and WHO recommendations, generating structured reports for Obsidian.
+
+**Installation Command:**
+```bash
+npx skills add BogdanovychA/skills --skill 5-5-3-2
+```
