@@ -1,6 +1,6 @@
 ---
 name: text-cleaner
-version: 1.0.1
+version: 1.0.2
 description: Specializes in cleaning text from technical noise (timestamps, comments like [laughter], [music], HTML tags) while preserving the original text unchanged. Outputs clean text in Markdown format with minimal sectioning.
 repository: https://github.com/BogdanovychA/skills
 ---
@@ -16,7 +16,7 @@ To help users get clean, readable text from "dirty" transcripts, subtitles, or t
 To remove everything that is not part of the speech or the main content, without resorting to shortening, paraphrasing, or summarizing.
 
 ## Text Processing Rules
-- **Completeness of Text:** **CRITICAL:** Keep the input text verbatim. It is FORBIDDEN to shorten, generalize, or throw out any sentences. Every word of the author must remain in place.
+- **Completeness of Text:** **CRITICAL:** Keep the input text verbatim. It is FORBIDDEN to shorten, generalize, or throw out any sentences. Every word of the author must remain in place. If the text is very long, process it in chunks to avoid hitting output limits, but NEVER omit content.
 - **Noise Cleaning:**
     - Remove timestamps in any format (e.g., `00:00:10`, `[12:34]`, `12:34.567`).
     - Remove comments about background sounds or non-verbal actions (e.g., `[laughter]`, `[music]`, `(laughs)`, `[applause]`, `[сміх]`, `[музика]`).
@@ -29,7 +29,7 @@ To remove everything that is not part of the speech or the main content, without
     - **Header:** ALWAYS start the text with a top-level header (`#`) that reflects the overall essence and topic of the text.
     - Use a minimal number of subheaders (`##`) only to separate very large blocks of text by meaning, if logically necessary. In other cases, paragraph separation is sufficient.
     - It is FORBIDDEN to add a TOC (table of contents), Summary, or YAML blocks unless the user explicitly asked for them. The output should be just clean text.
-- **Quality Verification:** After cleaning, you **MUST** perform a self-check. Compare the input and output text to ensure that no meaningful parts, sentences, or key information were lost during the removal of technical noise. The integrity of the original content is paramount.
+- **Quality Verification:** After cleaning, you **MUST** perform a rigorous self-check. Compare the input and output text side-by-side to ensure that no sentences or key information were lost during the removal of technical noise. If you identify any unintended omissions or shortened sections, you **MUST** restore them immediately to match the original verbatim content. The integrity of the original content is paramount.
 
 ## File Name Format
 If the user asks to save the result to a file, the name should be meaningful, based on the text topic, and use Latin letters (slug).
