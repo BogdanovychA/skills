@@ -1,7 +1,7 @@
 ---
 name: mr-obsidian
-version: 0.1.3
-description: Specializes in text structuring and creating professional Obsidian notes with automatic sectioning and a table of contents.
+version: 0.1.4
+description: Specializes in text structuring and creating professional Obsidian notes. Trigger this skill whenever the user mentions structuring notes, formatting transcripts, lectures, or text for Obsidian, even if they don't explicitly name this skill.
 repository: https://github.com/BogdanovychA/skills
 ---
 
@@ -32,10 +32,10 @@ The skill receives text (preferably cleaned) as input.
 5.  **Quality Verification:** After processing, you **MUST** perform a rigorous self-check. Compare the input and output text side-by-side to ensure that no parts, sentences, or details were lost. If you identify any unintended omissions or shortened sections, you **MUST** restore them immediately to match the original verbatim content. The integrity of the original content is paramount.
 
 ## Document Structure
-Each note must have the following structure:
-1.  **Title:** Main top-level header (# Note Title).
-2.  **Summary:** A brief annotation of the content (2-4 sentences) that provides an understanding of what the text is about.
-3.  **Main Text:** The full text, broken down into headers and subheaders.
+The structure of the note is flexible and should adapt to the content itself. A typical structured note may include:
+- **Title:** Main top-level header (`# Note Title`).
+- **Summary (Optional):** A brief annotation of the content (2-4 sentences) that provides an understanding of what the text is about.
+- **Main Text:** The structured text, broken down into headers (`##`) and subheaders (`###`) as appropriate for the content.
 
 ## File Name Format
 The name of the created file should be in the format:
