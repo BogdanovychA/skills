@@ -15,7 +15,7 @@ Specializes in transforming raw text into structured notes optimized for Obsidia
 
 **Installation Command:**
 ```bash
-npx skills add BogdanovychA/skills --skill mr-obsidian
+npx skills add https://github.com/BogdanovychA/skills --skill mr-obsidian
 ```
 
 ### 2. Text Cleaner (text-cleaner)
@@ -23,7 +23,7 @@ Allows agents to efficiently clean text of "technical noise": timestamps, HTML t
 
 **Installation Command:**
 ```bash
-npx skills add BogdanovychA/skills --skill text-cleaner
+npx skills add https://github.com/BogdanovychA/skills --skill text-cleaner
 ```
 
 ### 3. Transcript Downloader (transcript-downloader)
@@ -31,7 +31,7 @@ Enables agents to download and save YouTube transcripts to the local disk. By de
 
 **Installation Command:**
 ```bash
-npx skills add BogdanovychA/skills --skill transcript-downloader
+npx skills add https://github.com/BogdanovychA/skills --skill transcript-downloader
 ```
 
 ### 4. Child Nutrition Analysis (5-5-3-2)
@@ -39,5 +39,5 @@ Specializes in analyzing the nutrition of young children (1–3 years) using the
 
 **Installation Command:**
 ```bash
-npx skills add BogdanovychA/skills --skill 5-5-3-2
+npx skills add https://github.com/BogdanovychA/skills --skill 5-5-3-2
 ```

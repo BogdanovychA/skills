@@ -1,6 +1,6 @@
 ---
 name: 5-5-3-2
-version: 0.1.0
+version: 0.1.1
 description: Specializes in analyzing the nutrition of young children (1–3 years) using the 5-5-3-2 methodology.
 repository: https://github.com/BogdanovychA/skills
 ---

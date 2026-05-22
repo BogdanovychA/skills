@@ -1,6 +1,6 @@
 ---
 name: text-cleaner
-version: 1.0.2
+version: 1.0.3
 description: Specializes in cleaning text from technical noise (timestamps, comments like [laughter], [music], HTML tags) while preserving the original text unchanged. Outputs clean text in Markdown format with minimal sectioning.
 repository: https://github.com/BogdanovychA/skills
 ---

@@ -1,6 +1,6 @@
 ---
 name: mr-obsidian
-version: 0.1.2
+version: 0.1.3
 description: Specializes in text structuring and creating professional Obsidian notes with automatic sectioning and a table of contents.
 repository: https://github.com/BogdanovychA/skills
 ---
