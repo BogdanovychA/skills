@@ -1,0 +1,17 @@
+{
+  "skill_name": "mr-obsidian",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Structure the following notes: 'Photosynthesis is the process used by plants to convert light energy into chemical energy. It has two stages: light-dependent reactions and the Calvin cycle. Light reactions occur in the thylakoid membranes. Calvin cycle occurs in the stroma.'",
+      "expected_output": "Markdown note with Title, Summary, and structured main text. Output filename YYYY-MM-DD-photosynthesis-process-stages.md. No emojis. Uses Callout block for highlights.",
+      "files": []
+    },
+    {
+      "id": 2,
+      "prompt": "Структуруй наступні нотатки з мітингу:\n- Проєкт Альфа стартує наступного тижня.\n- Олег має підготувати презентацію до вівторка.\n- Марія перевірить фінансовий план до п'ятниці.\n- Наступна зустріч запланована на 29 травня.",
+      "expected_output": "Markdown note formatted for Obsidian with a title like Project Alpha Meeting Notes, a brief summary, and structured task list. Filename YYYY-MM-DD-project-alpha-meeting-notes.md. No emojis.",
+      "files": []
+    }
+  ]
+}

@@ -1,7 +1,7 @@
 ---
 name: text-cleaner
-version: 1.0.3
-description: Specializes in cleaning text from technical noise (timestamps, comments like [laughter], [music], HTML tags) while preserving the original text unchanged. Outputs clean text in Markdown format with minimal sectioning.
+version: 1.0.4
+description: Specializes in cleaning text from technical noise (timestamps, comments like [laughter], [music], HTML tags) while preserving the original text unchanged. ALWAYS use this skill if the user provides a transcript, subtitle files (SRT, VTT), messy copy-pasted web text, or asks to clean text from timestamps, noise, or formatting clutter.
 repository: https://github.com/BogdanovychA/skills
 ---
 
@@ -35,6 +35,25 @@ To remove everything that is not part of the speech or the main content, without
 If the user asks to save the result to a file, the name should be meaningful, based on the text topic, and use Latin letters (slug).
 Format: `YYYY-MM-DD-slug-name.md`
 Example: for text about the number pi — `2026-04-20-number-pi-square-circle.md`
+
+## Example
+
+**Input:**
+User: "Clean this text from timestamps and background noises:
+[00:01:05] [laughter] Alright, let's start the meeting.
+[00:01:10] First of all, we need to review the Q4 marketing plan (which is almost done). [music]
+[00:01:20] Next, John will show the demo."
+
+**Output:**
+```markdown
+# Meeting Start and Q4 Marketing Plan
+
+Alright, let's start the meeting.
+
+First of all, we need to review the Q4 marketing plan (which is almost done).
+
+Next, John will show the demo.
+```
 
 ## How to Work with This Skill
 

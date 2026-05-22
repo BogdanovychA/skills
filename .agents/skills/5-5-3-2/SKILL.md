@@ -1,7 +1,7 @@
 ---
 name: 5-5-3-2
-version: 0.1.1
-description: Specializes in analyzing the nutrition of young children (1–3 years) using the 5-5-3-2 methodology.
+version: 0.1.2
+description: Specializes in analyzing the nutrition of young children (1–3 years) using the 5-5-3-2 methodology. ALWAYS use this skill if the user asks to analyze a child's diet, daily food intake, meal plans, or requests nutritional advice for toddlers (1-3 years), even if they do not explicitly mention the "5-5-3-2" methodology.
 repository: https://github.com/BogdanovychA/skills
 ---
 
@@ -58,6 +58,40 @@ The result must be formatted as a Markdown note for Obsidian.
 ## Filename Format
 The filename should follow the format:
 `YYYY-MM-DD-child-nutrition-analysis.md` (date and slugified name in Latin characters).
+
+## Example
+
+**Input:**
+User: "My 1.5 year old daughter Emma today ate:
+- Breakfast: oatmeal with banana and butter, glass of milk
+- Lunch: chicken soup with potatoes, carrot and bread
+- Snack: apple slices
+- Dinner: boiled fish, pasta, broccoli
+Please analyze Emma's diet."
+
+**Output:**
+(Saved to `2026-05-22-emma-nutrition-analysis.md`):
+```markdown
+# Nutrition Analysis: Emma (2026-05-22)
+
+| Meal          | Composition | Key Nutrients         |
+| :------------ | :---------- | :-------------------- |
+| **Breakfast** | Oatmeal with banana, butter, milk | Complex carbs, potassium, healthy fats, calcium |
+| **Lunch**     | Chicken soup (chicken, potatoes, carrot), bread | Proteins, vitamin A, complex carbs |
+| **Snack**     | Apple slices | Fiber, vitamins |
+| **Dinner**    | Boiled fish, pasta, broccoli | Omega-3 fatty acids, proteins, carbs, fiber |
+
+### 5-5-3-2 Summary:
+- **Starchy:** 3/5 (oatmeal, bread, pasta)
+- **Fruits & Vegetables:** 4/5 (banana, carrot, apple, broccoli)
+- **Dairy:** 1/3 (milk)
+- **Protein:** 2/2 (chicken, fish)
+
+### Conclusions and Recommendations:
+- **Overall State:** Emma's diet is rich in proteins, fruits, and vegetables. However, there is a deficit in starchy foods and dairy products.
+- **What to Add:** Try adding another dairy portion (yogurt or cheese) and a starchy snack (e.g. whole grain cracker) tomorrow.
+- **Nutritional Hack:** To increase healthy fat intake, try adding some chia or flax seeds to the breakfast oatmeal.
+```
 
 ## Tone and Limitations
 - **Tone:** Supportive, professional, without criticism or fear-mongering.
