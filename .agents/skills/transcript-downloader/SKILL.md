@@ -1,8 +1,9 @@
 ---
 name: transcript-downloader
 description: Download YouTube transcripts in various languages using the mr-transcript library. Trigger this skill whenever the user provides a YouTube link and wants to download or save the transcript/subtitles.
-version: 0.1.2
-repository: https://github.com/BogdanovychA/skills
+metadata:
+  version: 0.1.3
+  repository: https://github.com/BogdanovychA/skills
 ---
 
 # Transcript Downloader (transcript-downloader)

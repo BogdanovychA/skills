@@ -1,8 +1,9 @@
 ---
 name: mr-obsidian
-version: 0.1.4
 description: Specializes in text structuring and creating professional Obsidian notes. Trigger this skill whenever the user mentions structuring notes, formatting transcripts, lectures, or text for Obsidian, even if they don't explicitly name this skill.
-repository: https://github.com/BogdanovychA/skills
+metadata:
+  version: 0.1.5
+  repository: https://github.com/BogdanovychA/skills
 ---
 
 # Mr. Obsidian (mr-obsidian)

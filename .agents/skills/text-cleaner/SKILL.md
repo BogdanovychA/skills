@@ -1,8 +1,9 @@
 ---
 name: text-cleaner
-version: 1.0.4
 description: Specializes in cleaning text from technical noise (timestamps, comments like [laughter], [music], HTML tags) while preserving the original text unchanged. ALWAYS use this skill if the user provides a transcript, subtitle files (SRT, VTT), messy copy-pasted web text, or asks to clean text from timestamps, noise, or formatting clutter.
-repository: https://github.com/BogdanovychA/skills
+metadata:
+  version: 1.0.5
+  repository: https://github.com/BogdanovychA/skills
 ---
 
 # Text Cleaner (text-cleaner)

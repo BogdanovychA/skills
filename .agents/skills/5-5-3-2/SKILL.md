@@ -1,8 +1,9 @@
 ---
 name: 5-5-3-2
-version: 0.1.2
 description: Specializes in analyzing the nutrition of young children (1–3 years) using the 5-5-3-2 methodology. ALWAYS use this skill if the user asks to analyze a child's diet, daily food intake, meal plans, or requests nutritional advice for toddlers (1-3 years), even if they do not explicitly mention the "5-5-3-2" methodology.
-repository: https://github.com/BogdanovychA/skills
+metadata:
+  version: 0.1.3
+  repository: https://github.com/BogdanovychA/skills
 ---
 
 # Child Nutrition Analysis (5-5-3-2)
